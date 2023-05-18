@@ -6,6 +6,7 @@
 }
 
 body {
+    background-color: rgb(255, 255, 255);
 }
 
 .container {
@@ -16,6 +17,7 @@ body {
 
 form {
     margin-top: 40px;
+    
 }
 
 input, textarea, button {
@@ -24,6 +26,9 @@ input, textarea, button {
     margin-bottom: 8px;
     width: 100%;
     resize: none;
+    border-radius: 8px;
+    -webkit-appearance: textfield; 
+
 }
 
 button {
@@ -35,8 +40,72 @@ button {
     font-size: 18px;
     font-style: italic;
     cursor: pointer;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 button:hover {
     background-color: #27ae60;
+}
+
+
+.success-message {
+    background-color: #27ae60;
+    padding: 16px;
+    color: aliceblue;
+    border-radius: 8px;
+    display: none;
+
+}
+
+.error-messsage {
+    padding: 8px;
+    background-color: red;
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 12px;
+    display: none;
+
+}
+
+.menu {
+    display:flex;
+    width: 100%;
+    padding: 25px;
+    background-color: rgb(41, 37, 37);
+    font-family: sans-serif;
+    color: #fff;
+
+}
+
+.menuestilo {
+    margin-left: 45px;
+    margin-top: 13px;
+}
+
+.rodape {
+    width: 100%;
+    padding: 18px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+a {
+    margin-left: 45px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+    margin-top: 13px;
+}
+
+h3 {
+    margin-left: 5px;
+    margin-top: 10px;
+    color: rgb(215, 42, 42);
+
+}
+
+h1 {
+    color: rgb(215, 42, 42);
 }

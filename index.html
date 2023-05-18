@@ -8,19 +8,37 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+    <div class="menu">
+        <h1>BMX</h1> <h3> Trading</h3>
+        <div class="menuestilo">
+            <a href="">Início</a>
+            <a href=""> Sobre Nos</a>
+            <a href=""> Investimentos</a>
+            <a href=""> Contato</a>
+        </div>
+    </div>
     <div class="container">
-        <h1>EBAC Banking</h1>
+        <h1>BMX Trading</h1> <br>
         <h2>Depósitos</h2>
         <form id="form-deposito">
             <input id="nome-beneficiario" type="text" required placeholder="Nome completo do beneficiário" />
+            <p class="error-messsage">
+                O nome precisa estar completo
+            </p>
             <input id="numero-conta" type="number" required placeholder="Número da conta" />
             <input id="valor-deposito" type="number" required placeholder="Valor" />
             <textarea id="descricao" placeholder="Descrição (opcional)"></textarea>
             <button id="btn-deposito" type="submit">Depositar</button>
         </form>
+        <p class="success-message">
+            o montante de: <b>1000</b> foi eniado para o cliente: <b>Nome do Cliente</b> - conta: <b>1</b>
+        </p>
     </div>
+    <footer class="rodape">
+        &copy;2023 Todos os Direitos Reservados.
+    </footer>
 
-    <script src="./main.js"></script>
+    <script src="./main_two.js"></script>
 </body>
 </html>
 
