@@ -1,7 +1,12 @@
-//mensagem de sucesso com Alert
+//mensagem de sucesso com Alert//
 
 
 const form = document.getElementById('form-deposito');
+const nomeBeneficiario = document.getElementById('nome-beneficiario');
+let formEvalido = false;
+
+
+
 
 function validaNome(nomeCompleto) {
     const nomeComoArray = nomeCompleto.split(' ');
@@ -9,11 +14,10 @@ function validaNome(nomeCompleto) {
 }
 
 form.addEventListener('submit', function(e) {
-    let formEvalido = false;
     e.preventDefault();
 
 
-    const nomeBeneficiario = document.getElementById('nome-beneficiario');
+    
     const numeroContaBeneficiario = document.getElementById('numero-conta');
     const valorDepositado = document.getElementById('valor-deposito');
     const mensagemSucesso = `motante de: <b>${valorDepositado.value}</b> depositado para o cliente: <b>${nomeBeneficiario.value}</b> - conta <b>${numeroContaBeneficiario.value}</b>`;
@@ -33,9 +37,23 @@ form.addEventListener('submit', function(e) {
         nomeBeneficiario.style.border = '1px solid red'
         document.querySelector('.error-messsage').style.display = 'block';
     }
-
+    
 } )
 
-nomeBeneficiario.addEventListener('change', function(e) {
-    console.log(e);
-})
+
+nomeBeneficiario.addEventListener('keyup', function(e) {
+    console.log(e.target.value)
+    formEvalido = validaNome(e.target.value);
+    
+    if (!formEvalido) {
+        nomeBeneficiario.classList.add('error');
+        //nomeBeneficiario.style.border = '1px solid red';
+        document.querySelector('.error-messsage').style.display = 'block';
+        } else {    
+        nomeBeneficiario.classList.remove('error')
+        document.querySelector('.error-messsage').style.display = 'none';
+    }
+
+} ) ;
+
+

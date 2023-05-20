@@ -27,8 +27,7 @@ input, textarea, button {
     width: 100%;
     resize: none;
     border-radius: 8px;
-    -webkit-appearance: textfield; 
-
+    -webkit-appearance: textfield;
 }
 
 button {
@@ -48,7 +47,6 @@ button:hover {
     background-color: #27ae60;
 }
 
-
 .success-message {
     background-color: #27ae60;
     padding: 16px;
@@ -65,7 +63,6 @@ button:hover {
     margin-bottom: 8px;
     font-size: 12px;
     display: none;
-
 }
 
 .menu {
@@ -75,7 +72,6 @@ button:hover {
     background-color: rgb(41, 37, 37);
     font-family: sans-serif;
     color: #fff;
-
 }
 
 .menuestilo {
@@ -108,4 +104,11 @@ h3 {
 
 h1 {
     color: rgb(215, 42, 42);
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
+
 }
