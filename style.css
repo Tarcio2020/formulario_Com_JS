@@ -82,9 +82,10 @@ button:hover {
 .rodape {
     width: 100%;
     padding: 18px;
-    background-color: black;
+    background-color: rgb(41, 37, 37);
     color: #fff;
     text-align: center;
+    height: 100px;
 }
 
 a {
